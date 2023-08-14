@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: paleturquoise;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+#auth-container {
+  width: 500px;
+  height: 40vh;
+  margin: 150px auto;
+  background-image: linear-gradient(
+    rgba(0, 42, 255, 0.825),
+    rgba(59, 209, 235, 0.963)
+  );
+  padding: 10px;
+  border-radius: 10px;
+  animation: SlideUp 3s;
+}
+
+h1 {
+  text-align: center;
+  color: antiquewhite;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+#auth-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  width: 300px;
+  height: 30px;
+  margin: 10px;
+  padding: 5px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  border: none;
+  outline: none;
+}
+
+#buttons {
+  display: flex;
+}
+
+button {
+  width: 100px;
+  height: 30px;
+  margin: 5px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-color: cadetblue;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  color: beige;
+}
+
+button:hover {
+  background-color: aqua;
+  color: black;
+  transition: 1s;
+}
+
+#logout {
+  display: none;
+}
+
+@keyframes SlideUp {
+  from {
+    transform: translateY(200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
